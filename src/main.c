@@ -1,15 +1,18 @@
 #include <stdio.h>
+#include <string.h>
 #include "../include/clock.h"
+#include "../include/args.h"
 
 /**
  * @brief 主函数
  *
- * 调用calculate_mars_time函数计算并输出当前火星时间。
+ * 解析命令行参数并调用相应函数。
  *
+ * @param argc 参数个数
+ * @param argv 参数数组
  * @return 返回程序执行状态码
  */
-int main()
+int main(int argc, char *argv[])
 {
-    calculate_mars_time();
-    return 0;
+    return handle_args(argc, argv);
 }
