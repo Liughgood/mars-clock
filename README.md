@@ -57,6 +57,15 @@ make test
 ./bin/test
 ```
 
+## Homebrew 安装
+
+你可以使用 Homebrew 安装 Mars Clock：
+
+```sh
+brew tap liughgood/genhao-formulas
+brew install mars-clock
+```
+
 ## 文件说明
 
 ### `main.c`
