@@ -96,8 +96,7 @@ void calculate_mars_time()
     printf("LMST: %lf\n", LMST);
     printf("LTST: %lf\n", LTST);
     */
-    printf("Mars Sol Date: %lf\n", MSD / 24.0);
-    printf("Current Mars Time: %02d:%02d:%02d\n", (int)MST, (int)(MST * 60) % 60, (int)(MST * 3600) % 60);
+    printf("Current Mars Sol Date: %lf %02d:%02d:%02d AMT \n", MSD / 24.0, (int)MST, (int)(MST * 60) % 60, (int)(MST * 3600) % 60);
 }
 
 double getJDut(long long millis)
